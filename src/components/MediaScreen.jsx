@@ -59,6 +59,38 @@ export default function MediaScreen() {
           top: auto !important;
           max-width: 220px !important;
         }
+          .contact-overlay {
+    padding: 24px !important;
+  }
+
+  .contact-overlay h1 {
+    font-size: 28px !important;
+  }
+
+  .contact-subtitle {
+    font-size: 15px !important;
+  }
+
+  .contact-close {
+    top: 16px !important;
+    right: 16px !important;
+    font-size: 24px !important;
+  }
+
+  .contact-card {
+    max-width: 100% !important;
+    padding: 16px !important;
+  }
+
+  .contact-row {
+    font-size: 14px !important;
+    padding: 8px 0 !important;
+  }
+
+  .contact-link {
+    word-break: break-all;
+  }
+}
       }
     `}</style>
   );

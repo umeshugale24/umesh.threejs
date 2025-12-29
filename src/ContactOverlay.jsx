@@ -6,41 +6,46 @@ export default function ContactOverlay() {
   if (activeSection !== "contact") return null;
 
   return (
-    <div style={styles.overlay}>
-      <button style={styles.close} onClick={close}>✕</button>
+    <div style={styles.overlay} className="contact-overlay">
+      <button
+        style={styles.close}
+        className="contact-close"
+        onClick={close}
+      >
+        ✕
+      </button>
 
       <h1>Contact</h1>
-      <p style={{ opacity: 0.85 }}>
+      <p style={{ opacity: 0.85 }} className="contact-subtitle">
         Let’s connect — I respond fast.
       </p>
 
-      <div style={styles.card}>
-  <Row
-    label="Email"
-    value="umeshugale24@gmail.com"
-    href="mailto:umeshugale24@gmail.com"
-  />
+      <div style={styles.card} className="contact-card">
+        <Row
+          label="Email"
+          value="umeshugale24@gmail.com"
+          href="mailto:umeshugale24@gmail.com"
+        />
 
-  <Row
-    label="GitHub"
-    value="github.com/umeshugale24"
-    href="https://github.com/umeshugale24"
-  />
+        <Row
+          label="GitHub"
+          value="github.com/umeshugale24"
+          href="https://github.com/umeshugale24"
+        />
 
-  <Row
-    label="LinkedIn"
-    value="linkedin.com/in/umeshugale45"
-    href="https://www.linkedin.com/in/umeshugale45/"
-  />
-</div>
-
+        <Row
+          label="LinkedIn"
+          value="linkedin.com/in/umeshugale45"
+          href="https://www.linkedin.com/in/umeshugale45/"
+        />
+      </div>
     </div>
   );
 }
 
 function Row({ label, value, href }) {
   return (
-    <div style={styles.row}>
+    <div style={styles.row} className="contact-row">
       <span style={{ opacity: 0.7 }}>{label}</span>
 
       {href ? (
@@ -49,13 +54,7 @@ function Row({ label, value, href }) {
           target={href.startsWith("http") ? "_blank" : undefined}
           rel="noopener noreferrer"
           style={styles.link}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.textShadow =
-              "0 0 8px rgba(0,198,255,0.6)")
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.textShadow = "none")
-          }
+          className="contact-link"
         >
           {value}
         </a>
