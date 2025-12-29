@@ -10,6 +10,7 @@ import useIsMobile from "./hooks/useIsMobile";
 import IntroCard from "./IntroCard";
 import ExperienceTree from "./ExperienceTree";
 import { useEffect, useState } from "react";
+import MediaScreen from "./components/MediaScreen";
 
 export default function App() {
   //const isMobile = useIsMobile();
@@ -28,6 +29,7 @@ export default function App() {
  // }
   return (
     <>
+      <MediaScreen />
       <Scene />
       <ExperienceTree visible={showExperience} />
       <IntroCard />

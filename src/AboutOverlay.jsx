@@ -6,23 +6,23 @@ export default function AboutOverlay() {
   if (activeSection !== "about") return null;
 
   return (
-    <div style={styles.overlay}>
+    <div style={styles.overlay} className="about-overlay">
       <button style={styles.close} onClick={close}>✕</button>
 
       <h1>About Me</h1>
-      <p style={styles.paragraph}>
+      <p style={styles.paragraph} className="about-paragraph">
        Hello, I’m Umesh - MS in Computer Science and Software Engineer with 2 years of experience.
         </p>
-        <p style={styles.paragraph}>
+        <p style={styles.paragraph} className="about-paragraph">
             Passionate about AI / ML and distributed secure systems.
         </p>
-        <p style={styles.paragraph}>I specialize in building scalable web applications using React, Java, Spring Boot, and cloud-based platforms and Salesforce integrations using REST/SOAP apis.</p>
-        <p style={styles.paragraph}>I have worked on Salesforce based Sales and CPQ cloud.</p>
-        <p style={styles.paragraph}>I am 2X Salesforce Certified.</p>
+        <p style={styles.paragraph} className="about-paragraph">I specialize in building scalable web applications using React, Java, Spring Boot, and cloud-based platforms and Salesforce integrations using REST/SOAP apis.</p>
+        <p style={styles.paragraph} className="about-paragraph">I have worked on Salesforce based Sales and CPQ cloud.</p>
+        <p style={styles.paragraph} className="about-paragraph">I am 2X Salesforce Certified.</p>
 
       
 
-        <p style={styles.paragraph}>
+        <p style={styles.paragraph} className="about-paragraph">
   You can find my work on
   <a
     href="https://github.com/umeshugale24"
