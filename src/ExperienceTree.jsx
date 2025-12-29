@@ -15,12 +15,12 @@ export default function ExperienceTree({ show }) {
 
       }}
     >
-      <div style={styles.card}>
-        <h3 style={styles.heading}>Experience</h3>
+      <div className="experience-card" style={styles.card}>
+        <h3 className="experience-heading"style={styles.heading}>Experience</h3>
 
         <div style={styles.timeline}>
-          <div style={styles.node}>
-            <img src="/logos/csuf.png" alt="CSUF" style={styles.logo} />
+          <div className="experience-node" style={styles.node}>
+            <img className="experience-logo" src="/logos/csuf.png" alt="CSUF" style={styles.logo} />
           <div>
              <strong>2024 – 2025</strong>
             <p>
@@ -125,4 +125,5 @@ const styles = {
     marginTop: 8,
     flexShrink: 0,
   },
+  
 };
