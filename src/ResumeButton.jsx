@@ -13,11 +13,13 @@ export default function ResumeButton() {
       href="/resume/Umesh_Ugale_Resume.pdf"
       onClick={openResume}
       style={styles.button}
+      className="resume-button"
     >
       📄 Resume
     </a>
   );
 }
+
 
 const styles = {
   button: {

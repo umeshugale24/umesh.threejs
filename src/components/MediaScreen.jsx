@@ -91,6 +91,17 @@ export default function MediaScreen() {
     word-break: break-all;
   }
 }
+  .resume-button {
+    top: auto !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    padding: 12px 22px !important;
+    font-size: 14px !important;
+    border-radius: 999px !important;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35) !important;
+  }
       }
     `}</style>
   );

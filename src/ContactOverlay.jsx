@@ -17,7 +17,7 @@ export default function ContactOverlay() {
 
       <h1>Contact</h1>
       <p style={{ opacity: 0.85 }} className="contact-subtitle">
-        Let’s connect — I respond fast.
+        Let's connect and build together - I respond fast.
       </p>
 
       <div style={styles.card} className="contact-card">
