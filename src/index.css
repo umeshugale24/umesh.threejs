@@ -186,25 +186,4 @@ a[href$="Resume.pdf"]:hover {
     opacity: 1;
   }
 }
-@media screen and (max-width: 768px) {
-  .experience-wrapper {
-    left: 50% !important;
-    top: auto !important;
-    bottom: 24px !important;
-    transform: translateX(-50%) !important;
-  }
-
-  .experience-card {
-    width: 90vw !important;
-    padding: 16px !important;
-  }
-
-  .experience-heading {
-    font-size: 18px !important;
-  }
-
-  .experience-node {
-    font-size: 14px !important;
-  }
-}
 
