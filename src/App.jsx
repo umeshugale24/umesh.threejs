@@ -12,7 +12,7 @@ import ExperienceTree from "./ExperienceTree";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const isMobile = useIsMobile();
+  //const isMobile = useIsMobile();
    const [showExperience, setShowExperience] = useState(false);
    useEffect(() => {
   const onScroll = () => {
@@ -23,9 +23,9 @@ export default function App() {
   return () => window.removeEventListener("scroll", onScroll);
 }, []);
 
-  if (isMobile) {
-    return <MobileView />;
-  }
+ // if (isMobile) {
+  //  return <MobileView />;
+ // }
   return (
     <>
       <Scene />

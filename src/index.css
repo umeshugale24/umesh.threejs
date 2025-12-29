@@ -178,4 +178,12 @@ a[href$="Resume.pdf"]:hover {
     transform: translateY(-6px);
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
